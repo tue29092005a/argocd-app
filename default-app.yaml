@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: default
+  namespace: argocd
+spec:
+  description: Default project
+  # Cho phép deploy đến bất kỳ Cluster và Namespace nào
+  destinations:
+  - namespace: '*'
+    server: '*'
+  # Cho phép lấy source code từ bất kỳ Git Repository nào  
+  sourceRepos:
+  - '*'
