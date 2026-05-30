@@ -7,12 +7,12 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/ntquan/argocd-app.git
+    repoURL: https://github.com/tue29092005a/argocd-app.git
     targetRevision: HEAD
     path: dev
   destination:
     server: https://kubernetes.default.svc
-    namespace: myapp
+    namespace: tue
 
   syncPolicy:
     syncOptions:
